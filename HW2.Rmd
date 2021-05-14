@@ -1,0 +1,38 @@
+---
+title: "MAT381E-Homework 2"
+author: "Gül İnan"
+date: "17/05/2021"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+
+Visit the website https://covid19.saglik.gov.tr/ which gives official statistics on Covid-19 in
+our country. The front web page involves two maps titled "İllere göre haftalık vaka sayısı (100 binde)", and "İllere göre risk durumu", which are given below, respectively.
+
+
+```{r, echo=F, fig.align='center', out.width="60%", fig.cap = "İllere göre haftalık vaka sayısı (100 binde)"}
+knitr::include_graphics("images/illere_gore_vaka.png")
+```
+
+
+```{r, echo=F, fig.align='center', out.width="60%", fig.cap ="İllere göre risk durumu"}
+knitr::include_graphics("images/illere_gore_risk.png")
+```
+
+1. Scrape the data on "weekly confirmed cases" table available at https://covid19.saglik.gov.tr/  
+via `R package rvest`.
+2. Use this data to reproduce the identical of these two maps via `R package leaflet` (You can use the `shape files` which we have used in lectures).
+3. Feel free to improve the readability of the maps.
+4. Since the websites are being upgraded regularly, it is not of importance which data you have used in your homework as long
+as it belongs a recent date such as May, June.
+5. Furthermore, scrape the data on "Population by Provinces in Turkey" table available at https://tr.wikipedia.org/wiki/N%C3%BCfusuna_g%C3%B6re_T%C3%BCrkiye%27nin_illeri via `R package rvest`.
+6. Use the data above to produce a map which displays weekly confirmed cases per population for each province via `R package leaflet`.
+
+**A side note: You will return three maps in total.**
+
+**Cautionary notes**: 
+1) Homework assignments are individual-based studies. For that reason, students are expected to do homework assignments by themselves (**I will also check your commit history to see the evolution of the homework over time**). Homework assignments will not be accepted after deadline. There is **NO** make-up for missed homework.
+2) You should download `R Project` on `GitHub` to your local computer, do the changes as needed, delete all the files you have not used to produce your homework, then render the **`.Rmd`** file to **`.html`** file and finally commit and push all the required files (including `.Rmd` files) by
+ **June 7, 2021 18:00** via [GitHub Classroom of MAT381E organization](https://github.com/MAT381E).

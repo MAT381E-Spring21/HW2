@@ -28,7 +28,7 @@ via `R package rvest`.
 4. Since the websites are being upgraded regularly, it is not of importance which data you have used in your homework as long
 as it belongs a recent date such as May, June.
 5. Furthermore, scrape the data on "Population by Provinces in Turkey" table available at https://tr.wikipedia.org/wiki/N%C3%BCfusuna_g%C3%B6re_T%C3%BCrkiye%27nin_illeri via `R package rvest`.
-6. Use the data above to produce a map which displays weekly confirmed cases per population for each province via `R package leaflet`.
+6. Use the data above to produce a map which displays weekly confirmed cases per population for each province via `R package leaflet`.   
 
 **A side note: You will return three maps in total.**
 

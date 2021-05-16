@@ -211,14 +211,18 @@ summary {
 <ol style="list-style-type: decimal">
 <li>Scrape the data on “weekly confirmed cases” table available at <a href="https://covid19.saglik.gov.tr/" class="uri">https://covid19.saglik.gov.tr/</a><br />
 via <code>R package rvest</code>.</li>
-<li>Use this data to reproduce the identical of these two maps via <code>R package leaflet</code> (You can use the <code>shape files</code> which we have used in lectures).</li>
+<li>Use this data to reproduce the similar of these <strong>two maps</strong> via <code>R package leaflet</code>.<br />
+2.1. You can use the <code>shape files</code> which we have used in lectures.<br />
+2.2. In map1 there seems four different colors depending on the confirmed case count value: 1) 0-150, 2) 151-200, 3) 201-250, and 4) 251+.<br />
+2.3. In map 1, you do not need to fill in the title rectangular box, text boxes in each province, and pop-window backgrounds with green color.<br />
+2.4. You do not have to put the plot titles. It requires some HTML skills.<br />
+2.5. When merging data files according to provinces, be careful. Double-check the names of provinces. If you are doing something wrong you can understand it by checking the locations of the provinces on map.<br />
+2.6. Save the maps as <code>.html</code> files by <code>htmlwidgets::saveWidget</code>.<br />
+</li>
 <li>Feel free to improve the readability of the maps.</li>
-<li>Since the websites are being upgraded regularly, it is not of importance which data you have used in your homework as long as it belongs a recent date such as May, June.</li>
-<li>Furthermore, scrape the data on “Population by Provinces in Turkey” table available at <a href="https://tr.wikipedia.org/wiki/N%C3%BCfusuna_g%C3%B6re_T%C3%BCrkiye%27nin_illeri" class="uri">https://tr.wikipedia.org/wiki/N%C3%BCfusuna_g%C3%B6re_T%C3%BCrkiye%27nin_illeri</a> via <code>R package rvest</code>.</li>
-<li>Use the data above to produce a map which displays weekly confirmed cases per population for each province via <code>R package leaflet</code>.</li>
+<li>Since the websites are being upgraded regularly, it is not of importance which data you have used in your homework as long as it belongs a recent one.</li>
 </ol>
-<p><strong>A side note: You will return three maps in total.</strong></p>
-<p><strong>Cautionary notes</strong>: 1) Homework assignments are individual-based studies. For that reason, students are expected to do homework assignments by themselves (<strong>I will also check your commit history to see the evolution of the homework over time</strong>). Homework assignments will not be accepted after deadline. There is <strong>NO</strong> make-up for missed homework. 2) You should download <code>R Project</code> on <code>GitHub</code> to your local computer, do the changes as needed, delete all the files you have not used to produce your homework, then render the <strong><code>.Rmd</code></strong> file to <strong><code>.html</code></strong> file and finally commit and push all the required files (including <code>.Rmd</code> files) by <strong>June 7, 2021 18:00</strong> via <a href="https://github.com/MAT381E">GitHub Classroom of MAT381E organization</a>.</p>
+<p><strong>Cautionary notes</strong>: 1) Homework assignments are individual-based studies. For that reason, students are expected to do homework assignments by themselves (<strong>I will also check your commit history to see the evolution of the homework over time</strong>). Homework assignments will not be accepted after deadline. There is <strong>NO</strong> make-up for missed homework. 2) You should download <code>R Project</code> on <code>GitHub</code> to your local computer, do the changes as needed, delete all the files that you have not used to produce your homework, and finally commit and push all the required files (including <code>.Rmd</code> files, no <code>.pdf</code> submission since these are dynamic maps) by <strong>June 7, 2021 18:00</strong> via <a href="https://github.com/MAT381E">GitHub Classroom of MAT381E organization</a>.</p>
 
 
 
